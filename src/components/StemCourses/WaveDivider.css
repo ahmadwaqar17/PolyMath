@@ -1,0 +1,16 @@
+.wave-divider {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  margin-top: 40px;
+  margin-bottom: -5px;
+  z-index: 5;
+  overflow: hidden;
+}
+
+.wave-divider svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+}

@@ -1,0 +1,146 @@
+/* Certificate Verification Container */
+.certificate-verification {
+  position: relative;
+  width: 100%;
+  padding: 60px 20px 80px;
+  background-color: #e0f2f7;
+  font-family: 'Fredoka', 'Poppins', sans-serif;
+  overflow: hidden;
+  margin-top: 0;
+}
+
+/* Atom Icon */
+.atom-icon {
+  position: absolute;
+  top: 60px;
+  right: 80px;
+  width: 120px;
+  height: 120px;
+  z-index: 2;
+}
+
+/* Verification Title */
+.verification-title {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+  margin-top: 20px;
+  font-family: 'Fredoka', sans-serif;
+  color: transparent;
+  background: linear-gradient(to right, #9C27B0, #E91E63);
+  -webkit-background-clip: text;
+  background-clip: text;
+  position: relative;
+  z-index: 2;
+  letter-spacing: 0.5px;
+}
+
+/* Verification Description */
+.verification-description {
+  max-width: 800px;
+  margin: 0 auto 20px;
+  text-align: center;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #444;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+/* Verification Form */
+.verification-form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 15px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Certificate Input */
+.certificate-input {
+  flex: 1;
+  padding: 18px 25px;
+  border: none;
+  border-radius: 30px;
+  font-size: 0.95rem;
+  color: #555;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+  max-width: 500px;
+}
+
+.certificate-input::placeholder {
+  color: #888;
+  font-size: 0.95rem;
+}
+
+/* Verify Button */
+.verify-button {
+  background-color: #FFC107;
+  color: #333;
+  border: none;
+  border-radius: 30px;
+  padding: 18px 40px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.verify-button:hover {
+  background-color: #FFB300;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .verification-title {
+    font-size: 2rem;
+  }
+
+  .atom-icon {
+    width: 100px;
+    height: 100px;
+    top: 30px;
+    right: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .verification-form {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .certificate-input,
+  .verify-button {
+    width: 100%;
+  }
+
+  .verification-title {
+    font-size: 1.8rem;
+  }
+
+  .verification-description {
+    font-size: 0.95rem;
+  }
+
+  .atom-icon {
+    width: 80px;
+    height: 80px;
+    top: 20px;
+    right: 20px;
+  }
+}
