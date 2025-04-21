@@ -1,0 +1,180 @@
+.hero2-section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.banner-image {
+  width: 100%;
+  display: block;
+}
+
+.stats-container {
+  position: absolute;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  background-color: white;
+  padding: 15px;
+  border-radius: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.stat-badge {
+  background-color: white;
+  border-radius: 30px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  min-width: 100px;
+  height: 45px;
+  font-family: 'Poppins', sans-serif;
+  margin: 0 5px;
+}
+
+.google-badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.google-logo {
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: -1px;
+}
+
+.rating {
+  display: flex;
+  flex-direction: column;
+}
+
+.stars {
+  color: #FFC107;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.rating-text {
+  font-size: 12px;
+  color: #666;
+}
+
+.courses-badge, .students-badge {
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 15px;
+}
+
+.stat-number {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  width: 100%;
+}
+
+.stat-label {
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+  width: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .stats-container {
+    max-width: 500px;
+    padding: 12px;
+    bottom: 15px;
+  }
+
+  .stat-badge {
+    min-width: 90px;
+    height: 40px;
+    padding: 8px 15px;
+  }
+
+  .google-logo {
+    font-size: 16px;
+  }
+
+  .stars {
+    font-size: 12px;
+  }
+
+  .rating-text {
+    font-size: 10px;
+  }
+
+  .stat-number {
+    font-size: 18px;
+  }
+
+  .stat-label {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .stats-container {
+    max-width: 400px;
+    padding: 10px;
+    bottom: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .stat-badge {
+    min-width: 80px;
+    height: 38px;
+    margin: 3px;
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .stats-container {
+    max-width: 300px;
+    padding: 8px;
+    bottom: 5px;
+  }
+
+  .stat-badge {
+    min-width: 70px;
+    height: 35px;
+    margin: 2px;
+    padding: 5px 10px;
+  }
+
+  .google-logo {
+    font-size: 14px;
+  }
+
+  .stars {
+    font-size: 10px;
+  }
+
+  .rating-text {
+    font-size: 8px;
+  }
+
+  .stat-number {
+    font-size: 16px;
+  }
+
+  .stat-label {
+    font-size: 10px;
+  }
+}
+
